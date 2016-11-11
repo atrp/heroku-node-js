@@ -1,15 +1,15 @@
 {
-  "name": "heroku-node-js",
+  "name": "MEAN",
   "version": "1.0.0",
-  "description": "This example is so cool.",
-  "main": "app.js",
+  "description": "A MEAN app that allows users to manage contact lists",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
-  "author": "jane-doe",
-  "license": "MIT"
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "mongodb": "^2.1.6"
+  }
 }

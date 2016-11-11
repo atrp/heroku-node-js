@@ -1,2 +1,7 @@
-// Console will print the message
-console.log('Server running at https://node-js-ro.herokuapp.com/');
+var express = require("express");
+var path = require("path");
+var bodyParser = require("body-parser");
+
+var app = express();
+app.use(express.static(__dirname + "/public"));
+app.use(bodyParser.json());
