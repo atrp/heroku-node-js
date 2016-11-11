@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 // set the contact page route
-app.get('/contact/', function(req, res) {
+app.get('/contact', function(req, res) {
 
         // ejs render automatically looks in the views folder
         res.render('contact');
