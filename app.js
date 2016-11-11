@@ -15,14 +15,14 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 
 	// ejs render automatically looks in the views folder
-	res.render('index');
+	res.render('pages/index');
 });
 
 // set the contact page route
 app.get('/contact', function(req, res) {
 
         // ejs render automatically looks in the views folder
-        res.render('contact');
+        res.render('pages/contact');
 });
 
 app.listen(port, function() {
