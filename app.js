@@ -13,14 +13,12 @@ app.use(express.static(__dirname + '/public'));
 
 // set the home page route
 app.get('/', function(req, res) {
-
 	// ejs render automatically looks in the views folder
 	res.render('pages/index');
 });
 
 // set the contact page route
 app.get('/contact', function(req, res) {
-
         // ejs render automatically looks in the views folder
         res.render('pages/contact');
 });
